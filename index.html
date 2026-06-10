@@ -1,1 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>IndeedWeCode Demo Day</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #0b1020;
+      color: #f5f5f5;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    header {
+      text-align: center;
+      padding: 2.5rem 1rem 1.5rem;
+    }
+
+    header h1 {
+      font-size: 2.4rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    header p {
+      margin-top: 0.75rem;
+      max-width: 600px;
+      margin-inline: auto;
+      line-height: 1.5;
+      color: #d0d4e0;
+    }
+
+    .tagline {
+      margin-top: 0.5rem;
+      font-size: 0.95rem;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      color: #9fa6ff;
+    }
+
+    main {
+      width: 100%;
+      max-width: 1100px;
+      padding: 1rem 1.5rem 3rem;
+    }
+
+    .section-title {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      color: #9fa6ff;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 1.5rem;
+      justify-items: center;
+    }
+
+    .circle-link {
+      text-decoration: none;
+      color: inherit;
+      text-align: center;
+    }
+
+    .circle {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 3px solid #9fa6ff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: radial-gradient(circle at 30% 20%, #ffffff33, #1a2140);
+      transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+    }
+
+    .circle img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .circle-link span {
+      display: block;
+      margin-top: 0.5rem;
+      font-size: 0.9rem;
+      color: #e4e7ff;
+    }
+
+    .circle-link:hover .circle {
+      transform: translateY(-4px) scale(1.03);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.45);
+      border-color: #ffffff;
+    }
+
+    .logos-section {
+      margin-top: 3rem;
+    }
+
+    footer {
+      padding: 1.5rem 1rem 2rem;
+      text-align: center;
+      font-size: 0.85rem;
+      color: #9ca3c7;
+    }
+
+    footer a {
+      color: #c4cbff;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>IndeedWeCode Demo Day</h1>
+    <p class="tagline">Celebrating projects, progress, and the power of code</p>
+    <p>
+      Explore each creator’s project by clicking on their photo, and check out our group logos below.
+    </p>
+  </header>
+
+  <main>
+    <!-- 13 Girls -->
+    <section>
+      <h2 class="section-title">Meet the Creators</h2>
+      <div class="grid">
+        <!-- Girl 1 -->
+        <a class="circle-link" href="girl1.html">
+          <div class="circle">
+            <img src="images/girl1.jpg" alt="Girl 1" />
+          </div>
+          <span>Girl 1</span>
+        </a>
+
+        <!-- Girl 2 -->
+        <a class="circle-link" href="girl2.html">
+          <div class="circle">
+            <img src="images/girl2.jpg" alt="Girl 2" />
+          </div>
+          <span>Girl 2</span>
+        </a>
+
+        <!-- Girl 3 -->
+        <a class="circle-link" href="girl3.html">
+          <div class="circle">
+            <img src="images/girl3.jpg" alt="Girl 3" />
+          </div>
+          <span>Girl 3</span>
+        </a>
+
+        <!-- Girl 4 -->
+        <a class="circle-link" href="girl4.html">
+          <div class="circle">
+            <img src="images/girl4.jpg" alt="Girl 4" />
+          </div>
+          <span>Girl 4</span>
+        </a>
+
+        <!-- Girl 5 -->
+        <a class="circle-link" href="girl5.html">
+          <div class="circle">
+            <img src="images/girl5.jpg" alt="Girl 5" />
+          </div>
+          <span>Girl 5</span>
+        </a>
+
+        <!-- Girl 6 -->
+        <a class="circle-link" href="girl6.html">
+          <div class="circle">
+            <img src="images/girl6.jpg" alt="Girl 6" />
+          </div>
+          <span>Girl 6</span>
+        </a>
+
+        <!-- Girl 7 -->
+        <a class="circle-link" href="girl7.html">
+          <div class="circle">
+            <img src="images/girl7.jpg" alt="Girl 7" />
+          </div>
+          <span>Girl 7</span>
+        </a>
+
+        <!-- Girl 8 -->
+        <a class="circle-link" href="girl8.html">
+          <div class="circle">
+            <img src="images/girl8.jpg" alt="Girl 8" />
+          </div>
+          <span>Girl 8</span>
+        </a>
+
+        <!-- Girl 9 -->
+        <a class="circle-link" href="girl9.html">
+          <div class="circle">
+            <img src="images/girl9.jpg" alt="Girl 9" />
+          </div>
+          <span>Girl 9</span>
+        </a>
+
+        <!-- Girl 10 -->
+        <a class="circle-link" href="girl10.html">
+          <div class="circle">
+            <img src="images/girl10.jpg" alt="Girl 10" />
+          </div>
+          <span>Girl 10</span>
+        </a>
+
+        <!-- Girl 11 -->
+        <a class="circle-link" href="girl11.html">
+          <div class="circle">
+            <img src="images/girl11.jpg" alt="Girl 11" />
+          </div>
+          <span>Girl 11</span>
+        </a>
+
+        <!-- Girl 12 -->
+        <a class="circle-link" href="girl12.html">
+          <div class="circle">
+            <img src="images/girl12.jpg" alt="Girl 12" />
+          </div>
+          <span>Girl 12</span>
+        </a>
+
+        <!-- Girl 13 -->
+        <a class="circle-link" href="girl13.html">
+          <div class="circle">
+            <img src="images/girl13.jpg" alt="Girl 13" />
+          </div>
+          <span>Girl 13</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- 3 Group Logos -->
+    <section class="logos-section">
+      <h2 class="section-title">Group Logos</h2>
+      <div class="grid">
+        <!-- Logo 1 -->
+        <a class="circle-link" href="logo1.html">
+          <div class="circle">
+            <img src="images/logo1.png" alt="Group Logo 1" />
+          </div>
+          <span>Group Logo 1</span>
+        </a>
+
+        <!-- Logo 2 -->
+        <a class="circle-link" href="logo2.html">
+          <div class="circle">
+            <img src="images/logo2.png" alt="Group Logo 2" />
+          </div>
+          <span>Group Logo 2</span>
+        </a>
+
+        <!-- Logo 3 -->
+        <a class="circle-link" href="logo3.html">
+          <div class="circle">
+            <img src="images/logo3.png" alt="Group Logo 3" />
+          </div>
+          <span>Group Logo 3</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    Built for <strong>IndeedWeCode Demo Day</strong>.  
+    Update image paths and pages in your GitHub repo as needed.
+  </footer>
+</body>
+</html>
 
