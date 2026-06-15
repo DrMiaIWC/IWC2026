@@ -1,0 +1,23 @@
+/* style.css */
+.brain-container {
+  position: relative;
+  width: 600px;
+}
+.brain-container img {
+  width: 100%;
+}
+@font-face {
+  font-family: transcity;
+  src: url(Transcity-DEMO.otf);
+}
+#tooltip {
+  position: absolute;
+  background: black;
+  color: white;
+  padding: 8px;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+  pointer-events: none;
+  display: none;
+  z-index: 1000;
+}
