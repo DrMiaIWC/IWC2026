@@ -1,0 +1,20 @@
+/* personal.css */
+table, th, td {
+  border: 1px solid;
+}
+
+  body {
+  text-align: center; 
+}
+
+table {
+  margin: 0 auto; /* The 'auto' targets the left and right sides */
+}
+
+
+img {
+  width: 80%;     /* Scales to fit its parent container */
+  max-width: 200px; /* Prevents stretching past its original size */
+  height: auto;    /* Keeps proportions perfectly intact */
+}
+
