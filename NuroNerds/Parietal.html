@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Parietal.html</title>
+</head>
+<style>
+  button {height: 100px;}
+  img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+  .collapsible {
+  background-color: #303846;
+  color: #f3d2d6;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: ;
+}
+
+.content {
+  padding: 50px; 200px;
+  display: none;
+  overflow: hidden;
+  background-color: #e4afb9;
+}
+  ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #38444d;
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: #f3d2d6;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: #303846;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #303846;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+h1 {color:white;}
+h2 {color:#303846;}
+body {background-color:#2f4661;
+  margin: 0;
+  padding: 0;
+}
+
+h2, p {
+  margin: 10px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #303846;
+}
+
+ul li {
+  float: left;
+}
+
+ul li a {
+  display: block;
+  color: #f3d2d6;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  background-color: #111111;
+}
+  footer {background-color:white;}
+p {color: #f3d2d6;
+font-size: 30px;}
+</style>
+
+<body>
+  <ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#news">frontal lobe</a></li>
+  <li><a href="Parietal.html">parietal lobe</a></li>
+  <li><a href="#about">occipital lobe</a></li>
+   <li><a href="#home">temporal lobe</a></li>
+  <li><a href="#news">cerebellum</a></li>
+
+  </li>
+</ul>
+<img src="image-removebg-preview.png" style="width: 600px; heigth: 100px;" class="center">
+<p></P>
+<button type="button" class="collapsible" style="font-size: 40px">Info</button>
+
+<div class="content">
+  <p>This part of your brain helps many different areas work cooperatively. That cooperation is key to many of the abilities you use in your everyday life. It also contains your brains ability to interpret sensations from anywhere on or within your body.Your parietal lobe is a processing center for sensations you can feel with your sense of touch. These include temperature, pressure, vibration and pain.
+
+Self-perception also uses your sense of touch to tell you where parts of your body are without needing to see them. </p>
+</div>
+<button type="button" class="collapsible"style="font-size: 40px">QnA</button>
+<div class="content">
+  <p>Where is the parietal lobe located?
+Your parietal lobe is underneath the crown of your skull, at the top rear of your head.
+How big is the parietal lobe?
+Your parietal lobe makes up about 19% of your brains cerebral cortex. </p>
+</div>
+
+
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+</body>
+</html>
